@@ -5,12 +5,14 @@
         src="/logo.png"
         alt="company logo"
         class="h-16 absolute left-8 top-18 mt-3 cursor-pointer"
+        data-test="logo-display-test"
     /></router-link>
     <img
       v-if="showMobileMenu"
       src="/Navbar/cancel-menu-light.png"
       alt="-"
       class="h-10 absolute right-8 top-8 cursor-pointer lg:invisible"
+      data-test="cross-icon-test"
       @click="hideMenu"
     />
     <img
@@ -18,6 +20,7 @@
       src="/Navbar/open-menu-light.png"
       alt="-"
       class="h-10 absolute right-8 top-8 cursor-pointer lg:invisible"
+      data-test="hamburger-display-test"
       @click="showMenu"
     />
 
@@ -34,8 +37,18 @@
           <div
             class="flex flex-row content-center align-center justify-center cursor-pointer w-full space-x-2 mx-auto"
           >
-            <img :src="navigation.image" alt="-" class="w-5 h-5" />
-            <p class="font-medium hover:font-semibold">{{ navigation.text }}</p>
+            <img
+              :src="navigation.image"
+              alt="-"
+              class="w-5 h-5"
+              data-test="menu-icons-test"
+            />
+            <p
+              class="font-medium hover:font-semibold"
+              data-test="menu-text-test"
+            >
+              {{ navigation.text }}
+            </p>
           </div></router-link
         >
       </li>
@@ -69,7 +82,7 @@ export default {
           text: "Kontakt",
         },
       ],
-      showMobileMenu: true,
+      showMobileMenu: false,
     };
   },
   methods: {
