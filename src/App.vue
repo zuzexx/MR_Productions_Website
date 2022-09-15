@@ -1,7 +1,13 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view />
+  <Navigation class="font-[Raleway]" />
+  <router-view class="font-[Raleway]" />
 </template>
+
+<script>
+import Navigation from "./components/Navbar/Navigation.vue";
+
+export default {
+  name: "App",
+  components: { Navigation },
+};
+</script>

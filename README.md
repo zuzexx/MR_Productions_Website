@@ -1,29 +1,9 @@
-# masiwebsite
+# Photography portfolio website
 
-## Project setup
-```
-npm install
-```
+currently work in progress
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### Icon Sources:
 
-### Compiles and minifies for production
-```
-npm run build
-```
+All of the icons are sourced from [Flaticon.com](https://www.flaticon.com/).
 
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+<a href="https://www.flaticon.com/free-icons/multiply" title="multiply icons">Multiply icons created by Freepik - Flaticon</a>
