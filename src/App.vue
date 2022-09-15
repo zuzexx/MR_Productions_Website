@@ -1,5 +1,5 @@
 <template>
-  <p>this is paragraph</p>
+  <router-view />
 </template>
 
 <script>
