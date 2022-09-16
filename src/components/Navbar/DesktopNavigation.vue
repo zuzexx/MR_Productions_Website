@@ -15,7 +15,7 @@
             :src="navigation.image"
             alt="-"
             class="w-5 h-5"
-            data-test="menu-icons-test"
+            data-test="small-icons-test"
           />
           <p
             class="font-medium hover:font-semibold text-zinc-300"

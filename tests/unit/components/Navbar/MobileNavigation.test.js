@@ -14,10 +14,6 @@ beforeEach(() => {
   });
 });
 describe("MobileNavigation", () => {
-  it("displays logo", () => {
-    const logo = wrapper.find("[data-test='logo-display-test']");
-    expect(logo.exists()).toBe(true);
-  });
   it("displays four small icons next to the menu items", () => {
     const icons = wrapper.findAll("[data-test='menu-icons-test']");
     expect(icons.length).toBe(4);
