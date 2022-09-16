@@ -1,17 +1,6 @@
 <template>
-  <nav
-    class="w-full h-0 invisible flex flex-row lg:fixed lg:top-0 lg:left-0 lg:visible lg:h-22"
-  >
-    <router-link to="/"
-      ><img
-        src="/logo.png"
-        alt="company logo"
-        class="h-16 absolute left-8 top-18 mt-8 cursor-pointer"
-        data-test="logo-display-test"
-    /></router-link>
-  </nav>
   <ul
-    class="lg:visible invisible lg:flex lg:flex-row lg:flex-nowrap lg:w-2/4 lg:right-8 lg:absolute lg:top-8 h-0"
+    class="lg:visible invisible lg:flex lg:flex-row lg:flex-nowrap lg:w-2/4 lg:right-8 lg:absolute lg:top-6 h-0 2xl:w-2/5 3xl:w-1/3"
   >
     <li
       v-for="navigation in navigations"
@@ -28,13 +17,17 @@
             class="w-5 h-5"
             data-test="menu-icons-test"
           />
-          <p class="font-medium hover:font-semibold" data-test="menu-text-test">
+          <p
+            class="font-medium hover:font-semibold text-zinc-300"
+            data-test="menu-text-test"
+          >
             {{ navigation.text }}
           </p>
         </div></router-link
       >
     </li>
   </ul>
+  <!--</nav>-->
 </template>
 
 <script>
