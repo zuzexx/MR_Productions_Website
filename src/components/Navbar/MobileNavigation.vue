@@ -1,10 +1,23 @@
 <template>
-  <nav class="h-auto w-full flex flex-row justify-center align-center">
+  <nav
+    :class="[
+      'w-full',
+      'flex',
+      'flex-row',
+      'justify-center',
+      'align-center',
+      'fixed',
+      'top-0',
+      'left-0',
+      navHeightClass,
+      'lg:invisible',
+    ]"
+  >
     <router-link to="/"
       ><img
         src="/logo.png"
         alt="company logo"
-        class="h-16 absolute left-8 top-18 mt-3 cursor-pointer"
+        class="h-16 absolute left-8 mt-8 cursor-pointer lg:hidden"
         data-test="logo-display-test"
     /></router-link>
     <img
@@ -25,13 +38,13 @@
     />
 
     <ul
-      class="mt-24 space-y-2 transition duration-150 ease-in-out mx-auto w-4/6 lg:invisible"
+      class="mt-24 transition duration-150 ease-in-out mx-auto w-4/6 lg:invisible bg-white bg-opacity-80"
       :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
     >
       <li
         v-for="navigation in navigations"
         :key="navigation"
-        class="py-2 mx-auto hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150"
+        class="py-2 mx-auto hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150 bg-opacity-60 bg-white hover:bg-opacity-100"
       >
         <router-link :to="navigation.link">
           <div
@@ -84,6 +97,14 @@ export default {
       ],
       showMobileMenu: false,
     };
+  },
+  computed: {
+    navHeightClass() {
+      return {
+        "h-24": !this.showMobileMenu,
+        "h-72": this.showMobileMenu,
+      };
+    },
   },
   methods: {
     showMenu() {
