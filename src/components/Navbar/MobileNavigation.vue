@@ -17,7 +17,7 @@
   />
 
   <ul
-    class="mt-24 transition duration-150 ease-in-out mx-auto w-4/6 lg:invisible bg-zinc-900 bg-opacity-80 h-auto absolute right-0"
+    class="mt-24 transition duration-150 ease-in-out mx-auto w-full lg:invisible bg-zinc-900 bg-opacity-80 h-auto absolute right-0"
     :class="this.showMobileMenu ? 'open-menu' : 'closed-menu'"
   >
     <li

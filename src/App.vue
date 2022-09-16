@@ -1,6 +1,6 @@
 <template>
   <Navigation class="font-[Raleway]" />
-  <router-view class="font-[Raleway] h-full bg-zinc-800" />
+  <router-view class="font-[Raleway] h-full bg-zinc-800 mt-24" />
 </template>
 
 <script>

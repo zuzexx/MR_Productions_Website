@@ -1,13 +1,15 @@
 <template>
   <section>
-    <p class="text-3xl flex flex-col items-center mt-24 h-full">
-      this is home view
-    </p>
+    <Hero />
+    <Main />
   </section>
 </template>
 
 <script>
+import Hero from "@/components/Home/Hero.vue";
+import Main from "@/components/Home/Main.vue";
 export default {
   name: "HomeView",
+  components: { Hero, Main },
 };
 </script>
