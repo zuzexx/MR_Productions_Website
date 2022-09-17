@@ -1,11 +1,11 @@
 <template>
   <section
-    class="flex flex-row flex-wrap justify-center mt-16 max-w-screen-4xl mx-auto"
+    class="flex flex-row flex-wrap justify-center mt-16 max-w-screen-3xl mx-auto bg-zinc-800"
   >
     <div
       v-for="grid in grids"
       :key="grid"
-      class="flex flex-col bg-zinc-900 mt-12 text-center w-11/12 md:w-1/3 mx-3 max-w-lg xl:mx-6 hover:cursor-pointer hover:shadow-lg hover:-translate-y-1 transition-all duration-150"
+      class="flex flex-col bg-zinc-900 mt-12 text-center w-11/12 md:w-1/3 mx-3 max-w-2xl xl:mx-6 hover:cursor-pointer hover:shadow-lg hover:-translate-y-10 transition-all duration-150"
       x-intersect="$el.classList.add('swingIn')"
     >
       <img
