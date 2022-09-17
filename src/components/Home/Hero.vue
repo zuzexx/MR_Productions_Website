@@ -10,16 +10,23 @@
         <h2
           class="font-semibold text-lg uppercase lg:text-3xl sm:text-xl"
           data-test="small-header-test"
+          x-intersect="$el.classList.add('fadeRightLeft')"
         >
           - We take time to -
         </h2>
         <h1
           class="font-bold text-3xl uppercase sm:text-5xl lg:text-7xl font-['Archivo']"
           data-test="big-header-test"
+          x-intersect="$el.classList.add('fadeLeftRight')"
         >
           stand & stare
         </h1>
-        <Button text="BE INSPIRED" type="primary" data-test="button-test" />
+        <Button
+          text="BE INSPIRED"
+          type="primary"
+          data-test="button-test"
+          x-intersect="$el.classList.add('fadeIn')"
+        />
       </div>
     </div>
     <!--<img src="/Hero/hero.jpg" alt="" />-->

@@ -2,6 +2,14 @@
 
 currently work in progress
 
+### Used:
+
+- HTML
+- [TailwindCSS](https://tailwindcss.com/) - styling
+- [Vue 3](https://vuejs.org/)
+- [Alpine.js](https://alpinejs.dev/) - for scroll animations
+- [Pixabay](https://pixabay.com/) - for royalti free pictures
+
 ### Icon Sources:
 
 All of the icons are sourced from [Flaticon.com](https://www.flaticon.com/).
