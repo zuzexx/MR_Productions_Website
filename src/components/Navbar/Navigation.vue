@@ -11,6 +11,7 @@
       'left-0',
       navHeightClass,
       'bg-zinc-900',
+      'z-50',
     ]"
   >
     <router-link to="/"
