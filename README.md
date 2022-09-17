@@ -9,6 +9,7 @@ currently work in progress
 - [Vue 3](https://vuejs.org/)
 - [Alpine.js](https://alpinejs.dev/) - for scroll animations
 - [Pixabay](https://pixabay.com/) - for royalti free pictures
+- [Animista](https://animista.net/) - code for some animations
 
 ### Icon Sources:
 
