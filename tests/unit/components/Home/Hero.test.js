@@ -5,10 +5,6 @@ let wrapper;
 beforeEach(() => {
   wrapper = shallowMount(Hero);
 });
-//has background image
-//has appropriate h2
-//has appropriate h1
-//has button
 
 describe("Hero", () => {
   it("has a background image", () => {
