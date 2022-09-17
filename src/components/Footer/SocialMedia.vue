@@ -4,6 +4,7 @@
       :src="image"
       alt="social media logo"
       class="w-10 xl:w-16 hover:scale-105 hover:cursor-pointer"
+      data-test="social-media-icon-test"
     />
   </section>
 </template>
