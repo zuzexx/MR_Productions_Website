@@ -6,6 +6,7 @@
         impedit voluptas magnam sunt voluptates totam obcaecati eos. Eligendi
         minus accusantium, nisi omnis nesciunt accusamus odit inventore commodi
         culpa?"
+      data-test="text-test"
     />
     <article class="pt-32">
       <div
@@ -23,6 +24,7 @@
         impedit voluptas magnam sunt  totam obcaecati eos. Eligendi
         minus accusantium, nisi omnis nesciunt accusamus odit inventore commodi
         culpa?"
+          data-test="text-test"
         />
       </div>
     </article>
