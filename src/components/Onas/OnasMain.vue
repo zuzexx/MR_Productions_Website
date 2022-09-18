@@ -21,7 +21,7 @@
     </article>
     <article class="pt-32">
       <div
-        class="w-4/6 flex flex-col justify-center mx-auto text-left lg:flex-row lg:w-10/12"
+        class="w-4/6 flex flex-col justify-center mx-auto tect-center lg:text-left lg:flex-row lg:w-10/12"
       >
         <img
           src="/Onas/main-onas.jpg"
