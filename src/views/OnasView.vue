@@ -1,11 +1,25 @@
-<template><OnasHero /><OnasMain /></template>
+<template>
+  <Hero
+    :style="{ backgroundImage: `url(${background})` }"
+    small-header=" - As good as the next picture we take -"
+    big-header="about us"
+    :button="false"
+  />
+  <OnasMain />
+</template>
 
 <script>
-import OnasHero from "@/components/Onas/OnasHero.vue";
+import Hero from "@/components/SharedComponents/Hero.vue";
 import OnasMain from "../components/Onas/OnasMain.vue";
+import background from "/public/Onas/header-onas.jpg";
 export default {
   name: "OnasView",
-  components: { OnasHero, OnasMain },
+  components: { Hero, OnasMain },
+  data() {
+    return {
+      background,
+    };
+  },
 };
 </script>
 
