@@ -41,7 +41,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .background {
   background-image: url("/public/Hero/hero.jpg");
   background-size: cover;

@@ -39,7 +39,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .background {
   background-image: url("/public/Fotografije/header-fotografije.jpg");
   background-size: cover;
