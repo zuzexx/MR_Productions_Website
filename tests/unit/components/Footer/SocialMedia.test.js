@@ -1,15 +1,15 @@
 import { shallowMount } from "@vue/test-utils";
 import SocialMedia from "@/components/Footer/SocialMedia";
 
-let wrapper;
+let wrapper, icons;
 beforeEach(() => {
   wrapper = shallowMount(SocialMedia);
+  icons = wrapper.findAll("[data-test='social-media-icon-test']");
 });
 
 //it shows 3 social media icons
 describe("SocialMedia", () => {
   it("shows 3 social media icons", () => {
-    let icons = wrapper.findAll("[data-test='social-media-icon-test']");
     expect(icons.length).toBe(3);
   });
 });

@@ -12,6 +12,11 @@ const routes = [
     name: "fotografije",
     component: () => import("../views/FotografijeView.vue"),
   },
+  {
+    path: "/onas",
+    name: "onas",
+    component: () => import("../views/OnasView.vue"),
+  },
 ];
 
 const router = createRouter({
