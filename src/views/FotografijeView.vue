@@ -1,14 +1,28 @@
 <template>
-  <section class="bg-zinc-800 h-full"><HeaderFotografije /> <Grid /></section>
+  <section>
+    <Hero
+      :style="{ backgroundImage: `url(${background})` }"
+      small-header="- Fresh works from around the world -"
+      big-header=" The avada collection"
+      :button="false"
+    />
+    <Grid />
+  </section>
 </template>
 
 <script>
 import Grid from "@/components/SharedComponents/Grid.vue";
-import HeaderFotografije from "../components/Fotografije/HeaderFotografije.vue";
+import Hero from "@/components/SharedComponents/Hero.vue";
+import background from "/public/Fotografije/header-fotografije.jpg";
 
 export default {
   name: "FotografijeView",
-  components: { Grid, HeaderFotografije },
+  components: { Grid, Hero },
+  data() {
+    return {
+      background,
+    };
+  },
 };
 </script>
 
