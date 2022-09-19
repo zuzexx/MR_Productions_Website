@@ -81,6 +81,14 @@
       transform-origin: top;
     }
   }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
 
   .fadeInUp {
     animation: fadeInUp 1s;
@@ -102,5 +110,8 @@
   }
   .background {
     animation: background 2s ease-out both;
+  }
+  .fadeIn {
+    animation: fadeIn 3s;
   }
 }

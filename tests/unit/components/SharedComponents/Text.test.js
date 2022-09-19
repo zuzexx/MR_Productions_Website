@@ -3,7 +3,12 @@ import Text from "@/components/SharedComponents/Text.vue";
 
 let wrapper, smallHeader, paragraph;
 beforeEach(() => {
-  wrapper = shallowMount(Text);
+  wrapper = shallowMount(Text, {
+    props: {
+      header: "Test header",
+      text: "test paragraph text",
+    },
+  });
   smallHeader = wrapper.find("[data-test='small-header-test']");
   paragraph = wrapper.find("[data-test='paragraph-test']");
 });

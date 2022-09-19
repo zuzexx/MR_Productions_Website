@@ -1,5 +1,4 @@
 <template>
-  <!--<section class="flex flex-col items-center h-auto text-zinc-300">-->
   <div
     class="background w-full flex flex-col justify-center items-center h-screen text-zinc-300"
     data-test="background-image-test"

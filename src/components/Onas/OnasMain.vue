@@ -15,8 +15,9 @@
         <img
           src="/Onas/main-onas.jpg"
           alt=" "
-          class="w-1/3 mx-auto lg:w-2/5 h-auto mb-8 xl:mb-0"
+          class="w-2/3 mx-auto lg:w-2/5 h-auto mb-8 xl:mb-0"
           data-test="about-us-picture"
+          x-intersect="$el.classList.add('fadeIn')"
         />
         <Text
           header="Capturing moments as they happen"

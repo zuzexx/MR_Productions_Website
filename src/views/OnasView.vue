@@ -1,11 +1,13 @@
 <template>
-  <Hero
-    :style="{ backgroundImage: `url(${background})` }"
-    small-header=" - As good as the next picture we take -"
-    big-header="about us"
-    :button="false"
-  />
-  <OnasMain />
+  <section>
+    <Hero
+      :style="{ backgroundImage: `url(${background})` }"
+      small-header=" - As good as the next picture we take -"
+      big-header="about us"
+      :button="false"
+    />
+    <OnasMain />
+  </section>
 </template>
 
 <script>
