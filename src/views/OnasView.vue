@@ -14,6 +14,7 @@
 import Hero from "@/components/SharedComponents/Hero.vue";
 import OnasMain from "../components/Onas/OnasMain.vue";
 import background from "/public/Onas/header-onas.jpg";
+
 export default {
   name: "OnasView",
   components: { Hero, OnasMain },

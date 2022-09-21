@@ -38,22 +38,22 @@ export default {
       navigations: [
         {
           link: "/",
-          image: "/Navbar/home-light.png",
+          image: "/Navbar/home-dark.png",
           text: "Domov",
         },
         {
           link: "/fotografije",
-          image: "/Navbar/photography-light.png",
+          image: "/Navbar/photography-dark.png",
           text: "Fotografije",
         },
         {
           link: "/onas",
-          image: "/Navbar/about-us-light.png",
+          image: "/Navbar/about-us-dark.png",
           text: "O nas",
         },
         {
           link: "/kontakt",
-          image: "/Navbar/contact-us-light.png",
+          image: "/Navbar/contact-us-dark.png",
           text: "Kontakt",
         },
       ],

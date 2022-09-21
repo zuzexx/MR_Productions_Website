@@ -1,17 +1,15 @@
 <template>
-  <img
+  <cross
     v-if="showMobileMenu"
     src="/Navbar/cancel-menu-light.png"
     alt="-"
-    class="h-10 absolute right-8 top-6 cursor-pointer lg:invisible"
+    class="absolute right-8 top-4 cursor-pointer lg:invisible opacity-90"
     data-test="cross-icon-test"
     @click="hideMenu"
   />
-  <img
+  <Menu
     v-else
-    src="/Navbar/open-menu-light.png"
-    alt="-"
-    class="h-10 absolute right-8 top-6 cursor-pointer lg:invisible"
+    class="absolute right-8 top-4 cursor-pointer lg:invisible opacity-90"
     data-test="hamburger-display-test"
     @click="showMenu"
   />
@@ -48,36 +46,38 @@
   <!--</nav>-->
 </template>
 <script>
+import Menu from "../svg/Menu.vue";
+import Cross from "../svg/Cross.vue";
 export default {
   name: "MobileNavigation",
+  components: { Menu, Cross },
   data() {
     return {
       navigations: [
         {
           link: "/",
-          image: "/Navbar/home-light.png",
+          image: "/Navbar/home-dark.png",
           text: "Domov",
         },
         {
           link: "/fotografije",
-          image: "/Navbar/photography-light.png",
+          image: "/Navbar/photography-dark.png",
           text: "Fotografije",
         },
         {
           link: "/onas",
-          image: "/Navbar/about-us-light.png",
+          image: "/Navbar/about-us-dark.png",
           text: "O nas",
         },
         {
           link: "/kontakt",
-          image: "/Navbar/contact-us-light.png",
+          image: "/Navbar/contact-us-dark.png",
           text: "Kontakt",
         },
       ],
       showMobileMenu: false,
     };
   },
-
   methods: {
     showMenu() {
       this.showMobileMenu = true;
