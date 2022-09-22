@@ -56,22 +56,22 @@ export default {
       navigations: [
         {
           link: "/",
-          image: "/Navbar/home-dark.png",
+          image: "/Navbar/home.svg",
           text: "Domov",
         },
         {
           link: "/fotografije",
-          image: "/Navbar/photography-dark.png",
+          image: "/Navbar/photography.svg",
           text: "Fotografije",
         },
         {
           link: "/onas",
-          image: "/Navbar/about-us-dark.png",
+          image: "/Navbar/about-us.svg",
           text: "O nas",
         },
         {
           link: "/kontakt",
-          image: "/Navbar/contact-us-dark.png",
+          image: "/Navbar/contact.svg",
           text: "Kontakt",
         },
       ],
@@ -95,5 +95,9 @@ export default {
 }
 .closed-menu {
   @apply opacity-0 h-0 p-0;
+}
+.filter-zinc {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg)
+    brightness(118%) contrast(119%);
 }
 </style>
