@@ -2,8 +2,8 @@
   <section>
     <Hero
       :style="{ backgroundImage: `url(${background})` }"
-      small-header="- Fresh works from around the world -"
-      big-header=" The avada collection"
+      small-header="- Videi, ki so vam v ponos -"
+      big-header=" MR Production kolekcija"
       :button="false"
     />
     <Grid />

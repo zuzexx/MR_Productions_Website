@@ -22,7 +22,7 @@
       </h1>
       <Button
         v-if="this.button"
-        text="BE INSPIRED"
+        text="Naše delo"
         type="primary"
         data-test="button-test"
         x-intersect="$el.classList.add('fadeIn')"

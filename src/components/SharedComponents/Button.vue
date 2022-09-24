@@ -36,4 +36,7 @@ button {
 .primary {
   @apply border border-solid border-zinc-300 bg-transparent px-8 py-2 text-sm lg:text-lg sm:px-10 lg:px-12 lg:py-3 text-zinc-300 font-normal uppercase hover:font-semibold hover:border-spacing-2 hover:rounded-lg hover:bg-zinc-800 hover:bg-opacity-80 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150;
 }
+.secondary {
+  @apply border border-solid border-zinc-300 bg-zinc-900 px-10 py-3 text-sm lg:text-lg sm:px-10 lg:px-20 lg:py-4 text-zinc-300 font-normal uppercase hover:font-semibold hover:border-spacing-2 hover:rounded-lg hover:bg-zinc-300 hover:bg-opacity-80 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-150 hover:text-zinc-900;
+}
 </style>

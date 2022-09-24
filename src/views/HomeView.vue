@@ -2,8 +2,8 @@
   <section>
     <Hero
       :style="{ backgroundImage: `url(${background})` }"
-      small-header="- We take time to -"
-      big-header="stand & stare"
+      small-header="- Vaša doživetja spremenimo v večne spomine -"
+      big-header="MR Production"
     />
     <Main />
   </section>

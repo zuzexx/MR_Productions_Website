@@ -2,8 +2,8 @@
   <section>
     <Hero
       :style="{ backgroundImage: `url(${background})` }"
-      small-header=" - As good as the next picture we take -"
-      big-header="about us"
+      small-header=" - Pripravljeni na vse -"
+      big-header="O nas"
       :button="false"
     />
     <OnasMain />

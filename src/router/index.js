@@ -17,6 +17,11 @@ const routes = [
     name: "onas",
     component: () => import("../views/OnasView.vue"),
   },
+  {
+    path: "/kontakt",
+    name: "kontakt",
+    component: () => import("../views/KontaktView.vue"),
+  },
 ];
 
 const router = createRouter({
